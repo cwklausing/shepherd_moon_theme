@@ -1,0 +1,15 @@
+// Import Bourbon
+@import "bourbon/bourbon";
+
+// Import base styling for project
+@import "base/reset";
+
+// Import modules for project
+@import "modules/utility";
+@import "modules/variables";
+@import "modules/typography";
+@import "modules/sizing";
+
+// Import partials for the project
+@import "partials/header";
+@import "partials/footer";
