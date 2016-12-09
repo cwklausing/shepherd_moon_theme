@@ -1,6 +1,11 @@
 /* ===========================================================
-  Variables
+  Navigation
 ============================================================ */
 
-$transparent-gray: rgba(40,40,40,0.8);
-$gold: #efcf4f;
+#menu-main-menu {
+  padding: 20px 0;
+  li {
+    width: 33.33%;
+    text-align: center;
+  }
+}

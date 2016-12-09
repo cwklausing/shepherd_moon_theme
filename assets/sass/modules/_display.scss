@@ -1,0 +1,33 @@
+/* ===========================================================
+  Display
+============================================================ */
+
+.flexing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.overlay {
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+    background: $transparent-gray;
+  }
+}
+
+.margin-edge {
+  margin: 0 10px;
+  @include bp(tablet) {
+    margin: 0 2%;
+  }
+  @include bp(smallscreen) {
+    margin: 0 4%;
+  }
+}
+
+.admin-bar {
+  position: relative;
+  top: 32px;
+}

@@ -1,6 +1,10 @@
 /* ===========================================================
-  Variables
+  Front Page
 ============================================================ */
 
-$transparent-gray: rgba(40,40,40,0.8);
-$gold: #efcf4f;
+.pottery {
+  margin: 10px 0;
+  @include bp(smallscreen) {
+    margin: 20px 0;
+  }
+}

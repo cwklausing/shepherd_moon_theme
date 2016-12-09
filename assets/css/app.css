@@ -183,25 +183,119 @@ optgroup {
   Variables
 ============================================================ */
 /* ===========================================================
+  Display
+============================================================ */
+.flexing {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.overlay {
+  opacity: 0; }
+  .overlay:hover {
+    opacity: 1;
+    background: rgba(40, 40, 40, 0.8); }
+
+.margin-edge {
+  margin: 0 10px; }
+  @media (min-width: 768px) {
+    .margin-edge {
+      margin: 0 2%; } }
+  @media (min-width: 980px) {
+    .margin-edge {
+      margin: 0 4%; } }
+
+.admin-bar {
+  position: relative;
+  top: 32px; }
+
+/* ===========================================================
   Typography
 ============================================================ */
+h2 {
+  text-transform: uppercase; }
+
+.whitetext {
+  color: white; }
+
 .off-screen {
   position: absolute;
   left: -5000px; }
 
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    color: #efcf4f;
+    text-decoration: none; }
+
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0; }
+
+li {
+  text-transform: uppercase;
+  list-style: none; }
+
 /* ===========================================================
   Sizing
 ============================================================ */
-.row {
-  display: block;
+/*
+  Width Styling
+ */
+.width-half {
   width: 100%; }
+  @media (min-width: 768px) {
+    .width-half {
+      width: 48%; } }
 
+.width-third {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .width-third {
+      width: 48%; } }
+  @media (min-width: 980px) {
+    .width-third {
+      width: 30%; } }
+
+.width-fourth {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .width-fourth {
+      width: 48%; } }
+  @media (min-width: 980px) {
+    .width-fourth {
+      width: 31%; } }
+  @media (min-width: 1224px) {
+    .width-fourth {
+      width: 23%; } }
+
+/*
+  Height styling
+ */
 .height-small {
   height: 100px; }
+
+.height-med {
+  height: 200px; }
+
+.height-large {
+  height: 300px; }
 
 .bg-img {
   background-position: center;
   background-size: cover; }
+
+/* ===========================================================
+  Navigation
+============================================================ */
+#menu-main-menu {
+  padding: 20px 0; }
+  #menu-main-menu li {
+    width: 33.33%;
+    text-align: center; }
 
 /* ===========================================================
   Header
@@ -209,5 +303,13 @@ optgroup {
 /* ===========================================================
   Footer
 ============================================================ */
+/* ===========================================================
+  Front Page
+============================================================ */
+.pottery {
+  margin: 10px 0; }
+  @media (min-width: 980px) {
+    .pottery {
+      margin: 20px 0; } }
 
 /*# sourceMappingURL=app.css.map */

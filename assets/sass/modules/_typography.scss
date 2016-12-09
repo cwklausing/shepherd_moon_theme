@@ -2,7 +2,39 @@
   Typography
 ============================================================ */
 
+h1 {
+
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.whitetext {
+  color: white;
+}
+
 .off-screen {
   position: absolute;
   left: -5000px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: $gold;
+    text-decoration: none;
+  }
+}
+
+ul {
+  -webkit-margin-before:0;
+  -webkit-margin-after:0;
+  -webkit-padding-start: 0;
+}
+
+li {
+  text-transform: uppercase;
+  list-style: none;
 }

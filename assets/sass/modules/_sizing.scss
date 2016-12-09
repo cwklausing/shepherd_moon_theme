@@ -1,13 +1,54 @@
 /* ===========================================================
   Sizing
 ============================================================ */
-.row {
-  display: block;
+
+/*
+  Width Styling
+ */
+.width-half {
   width: 100%;
+  @include bp(tablet) {
+    width: 48%;
+  }
 }
+
+.width-third {
+  width: 100%;
+  @include bp(tablet) {
+    width: 48%;
+  }
+  @include bp(smallscreen) {
+    width: 30%;
+  }
+}
+
+.width-fourth {
+  width: 100%;
+  @include bp(tablet) {
+    width: 48%;
+  }
+  @include bp(smallscreen) {
+    width: 31%;
+  }
+  @include bp(desktop) {
+    width: 23%;
+  }
+}
+
+/*
+  Height styling
+ */
 
 .height-small {
   height: 100px;
+}
+
+.height-med {
+  height: 200px;
+}
+
+.height-large {
+  height: 300px;
 }
 
 .bg-img {
