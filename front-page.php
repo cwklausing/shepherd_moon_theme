@@ -3,42 +3,33 @@
  * Template Name: Front Page
  */
 
-$pottery_gallery = get_field( 'pottery_gallery' );
+$hero_image     = get_field( 'main_image' );
+$title          = get_field( 'page_title' );
+$button_text    = get_field( 'sign_up_button' );
+$button_link    = get_field( 'sign_up_button_link' );
+$about_section  = get_field( 'front_page_about_text' );
+$banner_text    = get_field( 'sign_up_banner_text' );
+$banner_link    = get_field( 'sign_up_banner_link' );
 
 get_header();
 ?>
 
-<div class="flexing margin-edge">
-  <?php
-  if ( have_rows( 'pottery_gallery' ) ) :
+<div class="front-page">
+  <div class="bg-img height-xxl" style="background-image:url('<?php echo esc_url( $hero_image ); ?>');">
+    <div class="width-third text-right height-xxl flexing-right alignright flexing-col">
+      <h1 class="front-page__title"><?php echo esc_html( $title ); ?></h1>
+      <a href="<?php echo esc_url( $button_link ); ?>" class="btn btn--orange margin-right .txt-white"><?php echo esc_html( $button_text ); ?></a>
+    </div>
+  </div>
 
-    while( have_rows( 'pottery_gallery' ) ) : the_row();
-    $piece = get_sub_field( 'pottery_piece' );
-    $post = $piece;
-	  setup_postdata( $post );
-    $first_image  = get_field( 'image_gallery' )[0]['url'];
-    $title        = get_the_title( $piece );
-    $link         = get_permalink();
-
-    //After getting variables, reset post data
-    wp_reset_postdata();
-    ?>
-
-    <div class="height-large width-third bg-img pottery" style="background-image:url('<?php echo esc_url( $first_image ); ?>');">
-      <a href="<?php echo esc_url( $link ); ?>" class="overlay flexing height-large">
-        <h2 class="whitetext"><?php echo esc_html( $title ); ?></h2>
+  <div class="front-page__content width-max">
+    <?php echo $about_section; ?>
+    <div class="margin-top margin-bottom">
+      <a class="btn" href="<?php echo esc_url( $banner_link ); ?>">
+        <?php echo esc_html( $banner_text ); ?>
       </a>
     </div>
-
-    <?php
-
-    endwhile;
-
-  else : ?>
-
-  <h2>Sorry, no pottery was found</h2>
-
-  <?php endif; ?>
+  </div>
 </div>
 
 <?php get_footer(); ?>

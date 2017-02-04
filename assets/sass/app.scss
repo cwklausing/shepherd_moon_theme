@@ -1,18 +1,28 @@
 // Import Bourbon
 @import "bourbon/bourbon";
 
+// Import utility styles
+@import "utility/mixins";
+@import "utility/variables";
+
 // Import base styling
 @import "base/reset";
+@import "base/typography";
 
 // Import modules styling
-@import "modules/utility";
-@import "modules/variables";
 @import "modules/display";
-@import "modules/typography";
+@import "modules/navigation";
 @import "modules/sizing";
+@import "modules/icons";
 
 // Import partials styling
-@import "partials/navigation";
 @import "partials/header";
 @import "partials/footer";
-@import "partials/front-page";
+@import "partials/content";
+
+// Import templates styling
+@import "templates/front_page";
+@import "templates/csa_pickup";
+@import "templates/csa_about";
+@import "templates/csa_landing";
+@import "templates/photos";

@@ -1,0 +1,34 @@
+/* ===========================================================
+  Variables
+============================================================ */
+
+// Fonts
+$primary: 'Lato', Helvetica, sans-serif;
+$secondary: 'Cabin Condensed', serif;
+$tertiary: 'Amatic SC', serif;
+
+// Colors
+$transparent-gray: rgba(40,40,40,0.7);
+$transparent-white: rgba(255,255,255, 0.9);
+$black: #212121;
+$dark-gray: #303030;
+$light-gray: #909090;
+$orange: #f47442;
+$light-orange: #f48f66;
+$gmaps_orange: #ff776b;
+$green: rgb(66, 134, 58);
+$green-light: #9cba62;
+$green-lighter: #bdcfac;
+$green-lightest: #e0eed2;
+$blue: #207dd4;
+$ivory: #fffff0;
+
+$primary_site_color: $green;
+$primary_site_color_transparent: rgba(66, 134, 58, 0.96);
+$secondary_site_color: $green-light;
+$tertiary_site_color: $green-lighter;
+
+$hover-color: $light-orange;
+$link-color: $blue;
+$footer-color: $dark-gray;
+$footer-text: white;

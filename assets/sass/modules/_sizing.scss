@@ -2,36 +2,52 @@
   Sizing
 ============================================================ */
 
+img {
+  max-width: 100%;
+}
+
 /*
   Width Styling
  */
+
+.width-hundred {
+  width: 100%;
+}
+
+.width-max {
+  width: 90%;
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .width-half {
   width: 100%;
-  @include bp(tablet) {
-    width: 48%;
+  @include bp(md) {
+    width: 50%;
   }
 }
 
 .width-third {
   width: 100%;
-  @include bp(tablet) {
-    width: 48%;
+  @include bp(md) {
+    width: 50%;
   }
-  @include bp(smallscreen) {
-    width: 30%;
+  @include bp(lg) {
+    width: 33%;
   }
 }
 
 .width-fourth {
   width: 100%;
-  @include bp(tablet) {
-    width: 48%;
+  @include bp(sm) {
+    width: 50%;
   }
-  @include bp(smallscreen) {
-    width: 31%;
+  @include bp(md) {
+    width: 33%;
   }
-  @include bp(desktop) {
-    width: 23%;
+  @include bp(lg) {
+    width: 25%;
   }
 }
 
@@ -39,16 +55,31 @@
   Height styling
  */
 
-.height-small {
-  height: 100px;
-}
-
-.height-med {
-  height: 200px;
-}
-
-.height-large {
-  height: 300px;
+.height {
+  &-small {
+    height: 200px;
+  }
+  &-med {
+    height: 300px;
+  }
+  &-large {
+    height: 400px;
+  }
+  &-xl {
+    height: 500px;
+  }
+  &-xxl {
+    height: 550px;
+    @include bp(sm) {
+      height: 600px;
+    }
+    @include bp(lg) {
+      height: 650px;
+    }
+    @include bp(xl) {
+      height: 700px;
+    }
+  }
 }
 
 .bg-img {

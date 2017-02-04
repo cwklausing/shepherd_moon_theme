@@ -1,3 +1,30 @@
 /* ===========================================================
   Footer
 ============================================================ */
+footer {
+  background-color: $footer-color;
+  margin: 40px 0 0;
+
+  div {
+    border-bottom: 2px solid white;
+
+    @include bp('md') {
+      border-bottom: none;
+    }
+  }
+
+  h1,h2,h3,h4,h5,p,a,span {
+    color: $footer-text;
+  }
+
+  .social-media svg {
+    fill: $footer-text;
+  }
+}
+
+.sm-address {
+  text-align: center;
+  @include bp('md') {
+    text-align: left;
+  }
+}

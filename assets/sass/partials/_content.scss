@@ -1,10 +1,11 @@
 /* ===========================================================
-  Front Page
+  Content
 ============================================================ */
-
-.pottery {
-  margin: 10px 0;
-  @include bp(smallscreen) {
-    margin: 20px 0;
+.the-content {
+  img {
+    @media (max-width: 499px) {
+      width: 100%;
+      height: auto;
+    }
   }
 }

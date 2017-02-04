@@ -1,0 +1,31 @@
+/* ===========================================================
+  CSA About
+============================================================ */
+
+.expected-crops {
+  background-color: $primary_site_color;
+}
+
+.expected-crops__row {
+  display: flex;
+
+  &:nth-of-type(even) {
+    background-color: $secondary_site_color;
+
+    .expected-crops__produce {
+      background-color: $green-lightest;
+    }
+  }
+}
+
+.expected-crops__month {
+  font-weight: bold;
+  width: 25%;
+  padding: 1rem 3rem;
+}
+
+.expected-crops__produce {
+  background-color: $tertiary_site_color;
+  width: 75%;
+  padding: 1rem 2rem;
+}

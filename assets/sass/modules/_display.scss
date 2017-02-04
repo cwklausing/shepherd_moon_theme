@@ -2,32 +2,173 @@
   Display
 ============================================================ */
 
+body {
+  position: relative;
+}
+
 .flexing {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  &-right {
+    display: flex;
+    align-items: flex-end;
+  }
+  &-col {
+    flex-direction: column;
+  }
+  &-top {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.flex-simple {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .overlay {
-  opacity: 0;
-  &:hover {
-    opacity: 1;
-    background: $transparent-gray;
+  // Overlay is initially visible
+  opacity: 1;
+  background: $transparent-gray;
+  @include bp(lg) {
+    height: inherit;
+    opacity: 0;
+    padding: 0 20%;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
-.margin-edge {
-  margin: 0 10px;
-  @include bp(tablet) {
-    margin: 0 2%;
+.margin {
+  &-edge {
+    margin: 0 10px;
+    @include bp(md) {
+      margin: 0 2%;
+    }
+    @include bp(lg) {
+      margin: 0 4%;
+    }
   }
-  @include bp(smallscreen) {
-    margin: 0 4%;
+  &-top {
+    margin-top: 30px;
+  }
+  &-bottom {
+    margin-bottom: 30px;
+  }
+  &-right {
+    margin-right: 30px;
+  }
+  &-left {
+    margin-left: 30px;
+  }
+  &-tiny {
+    &-top {
+      margin-top: 10px;
+    }
+    &-right {
+      margin-right: 10px;
+    }
+  }
+  &-p-none {
+    p {
+      margin: 0;
+    }
+  }
+  &-none {
+    margin: 0;
   }
 }
 
-.admin-bar {
-  position: relative;
-  top: 32px;
+.pad {
+  padding: 10px;
+  &-top {
+    padding-top: 20px;
+  }
+  &-bottom {
+    padding-bottom: 20px;
+  }
+  &-left {
+    padding-left: 20px;
+  }
+  &-right {
+    padding-right: 20px;
+  }
+}
+
+.none {
+  display: none;
+  &-md {
+    display: none;
+    @include bp(md) {
+      display: inherit;
+    };
+  }
+  &-lg {
+    display: none;
+    @include bp(lg) {
+      display: inherit;
+    }
+  }
+}
+
+.align {
+  &left {
+    float: left;
+    margin: 20px 20px 20px 0;
+
+  }
+  &right {
+    float: right;
+    margin: 20px 0 20px 20px;
+  }
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.border-bottom {
+  border-bottom: 2px solid $dark-gray;
+}
+
+.border-top {
+  border-top: 2px solid $dark-gray;
+}
+
+.off-screen {
+  position: absolute;
+  left: -5000px;
+}
+
+.n-overflow {
+  overflow: hidden;
+}
+
+/* Colors */
+
+.bg-main {
+  background-color: $primary_site_color;
+}
+
+.gray-trans {
+  background-color: $transparent-gray;
+}
+
+#wpadminbar {
+  top: -46px;
+
+  // Custom media query for wordpress admin menu
+  @media (min-width: 600px) {
+    top: 0;
+  }
 }

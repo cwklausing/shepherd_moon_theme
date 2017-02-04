@@ -1,0 +1,23 @@
+/* ===========================================================
+  CSA Landing
+============================================================ */
+.csa-landing {
+  &__tile {
+    width: 100%;
+    margin: 2rem 0;
+    @include bp('lg') {
+      width: 48%;
+      margin: 1rem 1%;
+    }
+    h2 {
+      margin: 0;
+      padding: 2rem 0;
+      color: white;
+      background-color: $transparent-gray;
+    }
+
+    &:hover h2 {
+      color: $hover-color;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/* ===========================================================
+  Navigation
+============================================================ */
+
+#menu-main-menu, #menu-footer-menu {
+  @include bp(md) {
+    padding: 20px 0;
+  }
+  li {
+    text-align: center;
+    list-style: none;
+  }
+
+  a {
+    color: white;
+    padding: 1rem 2rem;
+    @include hover();
+  }
+}
+
+#menu-main-menu {
+  display: none;
+  @include bp(lg) {
+    display: flex;
+  }
+}
+
+#menu-footer-menu {
+  li {
+    padding: 0 1rem;
+  }
+}
+
+.mobile-menu {
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  background-color: $primary_site_color_transparent;
+
+  ul {
+    padding: 70px 5% 0 0;
+  }
+
+  li {
+    line-height: 5rem;
+    text-align: right;
+  }
+
+  a {
+    font-size: 2.8rem;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+}
+
+// Pagination
+.pagination {
+  text-align: center;
+  .current, .inactive {
+    font-size: 2.4rem;
+    padding: 0 2rem;
+  }
+
+  .current {
+    color: $black;
+  }
+  .inactive {
+    color: $link-color;
+    transition: color 200ms;
+
+    &:hover {
+      color: $hover-color;
+      transition: color 200ms;
+    }
+  }
+}

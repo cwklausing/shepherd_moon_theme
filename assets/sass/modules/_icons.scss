@@ -1,0 +1,82 @@
+/* ===========================================================
+  Icons
+============================================================ */
+
+.btn {
+  position: relative;
+  color: white;
+  padding: 10px 40px 10px 20px;
+  background: linear-gradient($light-orange, $orange);
+  border-radius: 6px;
+  border: 2px solid whitesmoke;
+  &:hover {
+    background: $light-orange;
+    color: white;
+  }
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    top: 16px; right: 14px;
+    width: 10px;
+    border: 1px solid white;
+    background-color: white;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+  }
+  &::after {
+    top: 23px;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+  }
+}
+
+.btn--menu {
+  width: 40px;
+  position: fixed;
+  right: 5%;
+  top: 20px;
+  z-index: 1000;
+
+  @include bp('lg') {
+    display: none;
+  }
+  .top, .middle, .bottom {
+    border-bottom: 4px solid $black;
+    margin-top: 10px;
+    width: 40px;
+    transform: rotate(0deg);
+  }
+
+  &__open {
+    height: 40px;
+    .middle {
+      display: none;
+    }
+    .top, .bottom {
+      position: absolute;
+      margin-top: 0;
+      top: 20px;
+    }
+    .top {
+      transform: rotate(45deg);
+      transition: all 0.5s;
+    }
+    .bottom {
+      transform: rotate(-45deg);
+      transition: all 0.5s;
+    }
+  }
+}
+
+.social-media {
+  svg {
+    height: 54px;
+    width: 54px;
+    fill: $black;
+    &:hover {
+      fill: $hover-color;
+    }
+  }
+}

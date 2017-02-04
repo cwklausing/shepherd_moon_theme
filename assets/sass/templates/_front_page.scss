@@ -1,0 +1,27 @@
+/* ===========================================================
+  Front Page
+============================================================ */
+
+.front-page__title {
+  font-family: $tertiary;
+  font-size: 10rem;
+  color: white;
+  text-shadow: 5px 5px 5px $black;
+  padding-right: 30px;
+  margin: 0;
+
+  @include bp(sm) {
+    font-size: 12rem;
+    line-height: 14rem;
+    margin: 10px 0;
+  }
+  @include bp(lg) {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
+}
+
+.front-page__content {
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+}
