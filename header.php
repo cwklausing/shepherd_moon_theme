@@ -29,7 +29,9 @@ $mobile_menu_array = array(
 </head>
 <body <?php body_class(); ?> >
   <header>
-    <h1 class="header__title">Shepherd Moon Farm</h1>
+    <a class="header__link" href="<?php get_home_url(); ?>">
+      <h1 class="header__title">Shepherd Moon Farm</h1>
+    </a>
     <div class="btn--menu">
       <div class="top"></div>
       <div class="middle"></div>

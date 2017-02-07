@@ -8,17 +8,21 @@ header {
   justify-content: space-between;
 }
 
-.header__title {
-  font-family: $tertiary;
-  letter-spacing: 0;
-  color: white;
-  margin: 0;
+.header__link {
   width: 100%;
   padding-left: 2rem;
 
   @include bp('lg') {
     width: 35%;
   }
+}
+
+.header__title {
+  font-family: $tertiary;
+  letter-spacing: 0;
+  color: white;
+  margin: 0;
+  padding: 1rem;
 }
 
 .header__nav {

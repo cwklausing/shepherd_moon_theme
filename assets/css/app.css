@@ -206,7 +206,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cabin Condensed", serif;
+  font-family: "Cabin Condensed", sans-serif;
   letter-spacing: 5px; }
 
 h1 {
@@ -313,6 +313,10 @@ body {
 
 .flex-column {
   flex-direction: column; }
+
+.flex-fill {
+  box-shadow: none !important;
+  visibility: hidden; }
 
 .overlay {
   opacity: 1;
@@ -477,6 +481,12 @@ img {
 .width-hundred {
   width: 100%; }
 
+.width-max-plus {
+  width: 90%;
+  max-width: 105rem;
+  margin-right: auto;
+  margin-left: auto; }
+
 .width-max {
   width: 90%;
   max-width: 80rem;
@@ -616,16 +626,19 @@ header {
   display: flex;
   justify-content: space-between; }
 
+.header__link {
+  width: 100%;
+  padding-left: 2rem; }
+  @media (min-width: 980px) {
+    .header__link {
+      width: 35%; } }
+
 .header__title {
   font-family: "Amatic SC", serif;
   letter-spacing: 0;
   color: white;
   margin: 0;
-  width: 100%;
-  padding-left: 2rem; }
-  @media (min-width: 980px) {
-    .header__title {
-      width: 35%; } }
+  padding: 1rem; }
 
 .header__nav {
   width: 65%; }
@@ -791,5 +804,64 @@ p.pickup-site__name {
   @media (min-width: 768px) {
     .photos__single {
       width: 32%; } }
+
+/* ===========================================================
+  Recipes
+============================================================ */
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.recipes__single {
+  width: 100%;
+  position: relative;
+  margin-bottom: 4rem;
+  box-shadow: 2px 2px 7px rgba(40, 40, 40, 0.7); }
+  @media (min-width: 768px) {
+    .recipes__single {
+      width: 47%; } }
+  @media (min-width: 980px) {
+    .recipes__single {
+      width: 31%; } }
+  @media (min-width: 1224px) {
+    .recipes__single {
+      width: 23%; } }
+  .recipes__single:hover .recipes__text {
+    font-size: 13rem;
+    text-shadow: 3px 3px 3px #303030;
+    transition: font-size 400ms, text-shadow 400ms; }
+
+.recipes__image {
+  text-align: center; }
+  .recipes__image img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; }
+
+.recipes__label {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(40, 40, 40, 0.2); }
+
+.recipes__text {
+  font-family: "Times New Roman", serif;
+  font-size: 11rem;
+  line-height: 0;
+  text-shadow: none;
+  margin: 0;
+  color: white;
+  transition: font-size 400ms, text-shadow 400ms; }
+
+.recipes__header {
+  padding: 3rem; }
+
+.recipes__title {
+  font-size: 3rem;
+  margin: 0; }
 
 /*# sourceMappingURL=app.css.map */
