@@ -453,20 +453,19 @@ body {
   visibility: hidden;
   overflow-y: auto;
   clear: both;
-  background-color: rgba(66, 134, 58, 0.96);
+  background-color: #42863a;
   z-index: 100; }
   .mobile-menu.is-open {
     visibility: visible;
     opacity: 1; }
   .mobile-menu ul {
-    padding: 70px 5% 0 0; }
+    padding: 10rem 5% 0 0; }
   .mobile-menu li {
     line-height: 5rem;
     text-align: right; }
   .mobile-menu a {
     font-size: 2.8rem;
-    color: white;
-    text-shadow: 2px 2px 5px black; }
+    color: white; }
 
 .pagination {
   text-align: center; }
@@ -649,10 +648,12 @@ header {
 
 .header__link {
   display: flex;
+  position: relative;
   align-items: center;
   height: 10rem;
   width: 100%;
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  z-index: 101; }
   @media (min-width: 980px) {
     .header__link {
       width: 35%; } }

@@ -41,7 +41,6 @@ $mobile_menu_array = array(
       <?php wp_nav_menu( $menu_array ); ?>
     </nav>
     <nav class="mobile-menu">
-      <h1 class="header__title"><?php bloginfo('name'); ?></h1>
       <?php wp_nav_menu( $mobile_menu_array ); ?>
     </nav>
   </header>

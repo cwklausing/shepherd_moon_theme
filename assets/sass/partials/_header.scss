@@ -18,10 +18,12 @@ header {
 
 .header__link {
   display: flex;
+  position: relative;
   align-items: center;
   height: $header-height;
   width: 100%;
   padding-left: 2rem;
+  z-index: 101;
 
   @include bp('lg') {
     width: 35%;
