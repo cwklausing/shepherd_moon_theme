@@ -292,6 +292,8 @@ b, em, strong {
 ============================================================ */
 body {
   position: relative; }
+  body.no-scroll {
+    overflow: hidden; }
 
 .flexing {
   display: flex;
@@ -316,7 +318,8 @@ body {
 
 .flex-fill {
   box-shadow: none !important;
-  visibility: hidden; }
+  visibility: hidden;
+  height: 0 !important; }
 
 .overlay {
   opacity: 1;
@@ -562,6 +565,7 @@ img {
 ============================================================ */
 .btn {
   position: relative;
+  display: inline-block;
   color: white;
   padding: 10px 40px 10px 20px;
   background: linear-gradient(#f48f66, #f47442);
@@ -632,7 +636,7 @@ img {
 ============================================================ */
 header {
   width: 100%;
-  background-color: rgba(66, 134, 58, 0.96);
+  background-color: #42863a;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -644,6 +648,9 @@ header {
       position: static; } }
 
 .header__link {
+  display: flex;
+  align-items: center;
+  height: 10rem;
   width: 100%;
   padding-left: 2rem; }
   @media (min-width: 980px) {
@@ -655,7 +662,7 @@ header {
   letter-spacing: 0;
   color: white;
   margin: 0;
-  padding: 1rem 0 1rem 3rem; }
+  padding: 1rem 0; }
   @media (max-width: 500px) {
     .header__title {
       font-size: 3.5rem; } }
@@ -688,8 +695,14 @@ footer {
 /* ===========================================================
   Content
 ============================================================ */
+.page-wrap {
+  margin-top: 10rem; }
+  @media (min-width: 768px) {
+    .page-wrap {
+      margin-top: 0; } }
+
 @media (max-width: 499px) {
-  .the-content img {
+  .page-content img {
     width: 100%;
     height: auto; } }
 
@@ -698,11 +711,14 @@ footer {
 ============================================================ */
 .front-page__title {
   font-family: "Amatic SC", serif;
-  font-size: 10rem;
+  font-size: 8rem;
   color: white;
   text-shadow: 5px 5px 5px #212121;
   padding-right: 30px;
   margin: 0; }
+  @media (min-width: 400px) {
+    .front-page__title {
+      font-size: 9rem; } }
   @media (min-width: 500px) {
     .front-page__title {
       font-size: 12rem;
@@ -716,6 +732,9 @@ footer {
 .front-page__content {
   margin-top: 7rem;
   margin-bottom: 8rem; }
+
+.front-page__sign-up {
+  margin: 30px 0; }
 
 /* ===========================================================
   CSA Pickup

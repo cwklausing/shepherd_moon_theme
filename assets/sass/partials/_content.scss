@@ -1,9 +1,18 @@
 /* ===========================================================
   Content
 ============================================================ */
-.the-content {
-  img {
-    @media (max-width: 499px) {
+.page-wrap {
+  margin-top: $header-height;
+
+  @include bp(md) {
+    margin-top: 0;
+  }
+}
+
+.page-content {
+  @media (max-width: 499px) {
+
+    img {
       width: 100%;
       height: auto;
     }

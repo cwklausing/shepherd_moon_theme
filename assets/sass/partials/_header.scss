@@ -3,7 +3,7 @@
 ============================================================ */
 header {
   width: 100%;
-  background-color: $primary_site_color_transparent;
+  background-color: $primary_site_color;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -17,6 +17,9 @@ header {
 }
 
 .header__link {
+  display: flex;
+  align-items: center;
+  height: $header-height;
   width: 100%;
   padding-left: 2rem;
 
@@ -30,7 +33,7 @@ header {
   letter-spacing: 0;
   color: white;
   margin: 0;
-  padding: 1rem 0 1rem 3rem;
+  padding: 1rem 0;
 
   @include bp(sm, max-width) {
     font-size: 3.5rem;

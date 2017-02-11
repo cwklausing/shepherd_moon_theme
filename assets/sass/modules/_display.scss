@@ -4,6 +4,10 @@
 
 body {
   position: relative;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 .flexing {
@@ -36,6 +40,7 @@ body {
 .flex-fill {
   box-shadow: none !important;
   visibility: hidden;
+  height: 0 !important;
 }
 
 .overlay {

@@ -196,9 +196,9 @@ var mobile_menu = ( function ( $ ) {
    * Common
    */
 
-  var $menuBtn  = $('.btn--menu'),
-      $menu     = $('.mobile-menu');
-      $html     = $('html');
+  var $menuBtn  = $('.btn--menu');
+  var $menu     = $('.mobile-menu');
+	var $body			= $('body');
 
   /**
    * Private Functions
@@ -207,7 +207,7 @@ var mobile_menu = ( function ( $ ) {
   var toggleMenu = function () {
     $menuBtn.toggleClass( 'btn--menu__open' );
     $menu.toggleClass( 'is-open' );
-    $html.toggleClass( 'n-overflow' );
+    $body.toggleClass( 'no-scroll' );
   };
 
   /**

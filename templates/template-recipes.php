@@ -8,7 +8,7 @@ $recipes = get_field( 'recipes' );
 get_header();
 ?>
 
-<div class="width-max-plus">
+<div class="width-max-plus page-wrap">
   <div class="width-max">
     <h1><?php the_title(); ?></h1>
   </div>

@@ -14,7 +14,7 @@ $banner_link    = get_field( 'sign_up_banner_link' );
 get_header();
 ?>
 
-<div class="front-page">
+<div class="front-page page-wrap">
   <div class="bg-img height-xxl" style="background-image:url('<?php echo esc_url( $hero_image ); ?>');">
     <div class="width-third text-right height-xxl flexing-right alignright flexing-col">
       <h1 class="front-page__title"><?php echo esc_html( $title ); ?></h1>
@@ -23,12 +23,12 @@ get_header();
   </div>
 
   <div class="front-page__content width-max">
-    <?php echo $about_section; ?>
-    <div class="margin-top margin-bottom">
-      <a class="btn" href="<?php echo esc_url( $banner_link ); ?>">
-        <?php echo esc_html( $banner_text ); ?>
-      </a>
+    <div class=front-page__about>
+        <?php echo $about_section; ?>
     </div>
+    <a class="btn front-page__sign-up" href="<?php echo esc_url( $banner_link ); ?>">
+      <?php echo esc_html( $banner_text ); ?>
+    </a>
   </div>
 </div>
 

@@ -29,8 +29,8 @@ $mobile_menu_array = array(
 </head>
 <body <?php body_class(); ?> >
   <header>
-    <a class="header__link" href="<?php get_home_url(); ?>">
-      <h1 class="header__title">Shepherd Moon Farm</h1>
+    <a class="header__link" href="<?php echo get_home_url(); ?>">
+      <h1 class="header__title"><?php bloginfo('name'); ?></h1>
     </a>
     <div class="btn--menu">
       <div class="top"></div>
@@ -41,6 +41,7 @@ $mobile_menu_array = array(
       <?php wp_nav_menu( $menu_array ); ?>
     </nav>
     <nav class="mobile-menu">
+      <h1 class="header__title"><?php bloginfo('name'); ?></h1>
       <?php wp_nav_menu( $mobile_menu_array ); ?>
     </nav>
   </header>

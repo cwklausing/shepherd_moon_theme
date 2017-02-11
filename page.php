@@ -8,7 +8,7 @@ $title = get_the_title();
 get_header();
 ?>
 
-<div class="width-max">
+<div class="width-max page-wrap">
   <div>
     <h1><?php echo esc_html( $title ); ?></h1>
   </div>

@@ -8,7 +8,7 @@ $gallery  = get_field( 'gallery' );
 get_header();
 ?>
 
-<div class="photos width-max">
+<div class="photos width-max page-wrap">
   <div class="photos__header">
     <h1 class="photos__title"><?php the_title(); ?></h1>
   </div>
@@ -21,8 +21,8 @@ get_header();
       </a>
 
       <?php endforeach; ?>
-      <span class="photos__single"></span>
-      <span class="photos__single"></span>
+      <span class="photos__single flex-fill"></span>
+      <span class="photos__single flex-fill"></span>
     <?php endif; ?>
   </div>
 </div>
