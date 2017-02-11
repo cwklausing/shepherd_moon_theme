@@ -4,8 +4,16 @@
 header {
   width: 100%;
   background-color: $primary_site_color_transparent;
-  display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  @include bp(md) {
+    display: flex;
+    position: static;
+  }
 }
 
 .header__link {
@@ -22,7 +30,11 @@ header {
   letter-spacing: 0;
   color: white;
   margin: 0;
-  padding: 1rem;
+  padding: 1rem 0 1rem 3rem;
+
+  @include bp(sm, max-width) {
+    font-size: 3.5rem;
+  }
 }
 
 .header__nav {

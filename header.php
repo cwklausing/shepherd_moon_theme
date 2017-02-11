@@ -40,7 +40,7 @@ $mobile_menu_array = array(
     <nav class="header__nav flexing">
       <?php wp_nav_menu( $menu_array ); ?>
     </nav>
-    <nav class="mobile-menu none width-hundred">
+    <nav class="mobile-menu">
       <?php wp_nav_menu( $mobile_menu_array ); ?>
     </nav>
   </header>

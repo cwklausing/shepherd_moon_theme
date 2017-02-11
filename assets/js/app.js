@@ -175,8 +175,6 @@ _instance.init = function() {
 
 	$('.acf-map').each(function(){
 
-    console.log('hello');
-
 		// create map
 		map = new_map( $(this) );
 
@@ -208,7 +206,7 @@ var mobile_menu = ( function ( $ ) {
 
   var toggleMenu = function () {
     $menuBtn.toggleClass( 'btn--menu__open' );
-    $menu.toggleClass( 'none' );
+    $menu.toggleClass( 'is-open' );
     $html.toggleClass( 'n-overflow' );
   };
 

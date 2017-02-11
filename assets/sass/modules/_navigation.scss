@@ -32,10 +32,22 @@
 }
 
 .mobile-menu {
-  height: 100vh;
-  position: fixed;
-  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 101vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  clear: both;
   background-color: $primary_site_color_transparent;
+  z-index: 100;
+
+  &.is-open {
+    visibility: visible;
+    opacity: 1;
+  }
 
   ul {
     padding: 70px 5% 0 0;

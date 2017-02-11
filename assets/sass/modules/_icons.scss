@@ -34,10 +34,10 @@
 
 .btn--menu {
   width: 40px;
-  position: fixed;
+  position: absolute;
   right: 5%;
-  top: 20px;
-  z-index: 1000;
+  top: 28px;
+  z-index: 101;
 
   @include bp('lg') {
     display: none;
