@@ -3,7 +3,7 @@
  * Template Name: Front Page
  */
 
-$hero_image     = get_field( 'main_image' );
+$hero_image     = get_field( 'main_image' )['sizes']['xxl'];
 $title          = get_field( 'page_title' );
 $button_text    = get_field( 'sign_up_button' );
 $button_link    = get_field( 'sign_up_button_link' );

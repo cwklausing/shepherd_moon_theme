@@ -6,6 +6,8 @@ if ( ! function_exists( 'shepherdmoon_setup' ) ) {
     // Enable support for Post Thumbnails, and declare two sizes.
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 672, 372, true );
+    add_image_size( 'xl', 1200, 9999 );
+    add_image_size( 'xxl', 2000, 9999 );
 
     // Enable menus
     add_theme_support( 'menus' );
