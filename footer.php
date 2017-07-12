@@ -19,8 +19,9 @@ $menu_array = array(
 
 ?>
 
-<footer class="flexing pad-right pad-left">
-  <div class="sm-address width-third margin-p-none pad-top pad-bottom">
+<footer class="footer">
+  <div class="flexing pad-right pad-left">
+      <div class="sm-address width-third margin-p-none pad-top pad-bottom">
     <a href="<?php echo esc_url( $google_maps_link ); ?>">
       <?php echo $address; ?>
     </a>
@@ -55,6 +56,10 @@ $menu_array = array(
   </nav>
 
   <?php wp_footer(); ?>
+  </div>
+  <div class="footer-credits pad-top pad-bottom">
+    <p>Site built by <a href="http://sitesbyconnor.com" target="_blank"><strong>Sites By Connor</strong></a></p>
+  </div>
 </footer>
 
 </body>

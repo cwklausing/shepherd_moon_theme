@@ -221,8 +221,8 @@ h3 {
   line-height: 3.6rem; }
 
 p {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
+  font-size: 2.2rem;
+  line-height: 3.4rem;
   letter-spacing: 1px; }
 
 p:first-of-type {
@@ -257,6 +257,12 @@ span {
 
 b, em, strong {
   font-weight: bold; }
+
+td {
+  width: 100%; }
+  @media (min-width: 500px) {
+    td {
+      width: auto; } }
 
 .text-right {
   text-align: right; }
@@ -706,6 +712,24 @@ footer {
   .page-content img {
     width: 100%;
     height: auto; } }
+
+/* ===========================================================
+  Footer
+============================================================ */
+footer p {
+  font-size: 2rem;
+  line-height: 1.4; }
+
+.footer-credits {
+  background-color: #cacaca;
+  text-align: center; }
+  .footer-credits p,
+  .footer-credits a {
+    color: black;
+    font-size: 1.6rem;
+    margin: 0; }
+  .footer-credits a:hover {
+    color: #f48f66; }
 
 /* ===========================================================
   Front Page

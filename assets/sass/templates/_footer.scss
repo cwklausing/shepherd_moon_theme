@@ -1,0 +1,21 @@
+/* ===========================================================
+  Footer
+============================================================ */
+footer p {
+	font-size: 2rem;
+	line-height: 1.4;
+}
+
+.footer-credits {
+	background-color: #cacaca;
+	text-align: center;
+	p, 
+	a {
+		color: black;
+		font-size: 1.6rem;
+		margin: 0;
+	}
+	a:hover {
+		color: $hover-color;
+	}
+}

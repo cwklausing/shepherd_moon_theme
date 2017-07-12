@@ -4,7 +4,7 @@
 if ( ! function_exists( 'shepherdmoon_styles' ) ) {
   function shepherdmoon_styles() {
 
-    wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.css') ;
+    wp_enqueue_style( 'app_css', get_template_directory_uri() . '/assets/css/app.min.css') ;
     wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 
     // Google fonts
